@@ -13,7 +13,7 @@ spring:
 #      cluster-nodes: 192.168.20.153:9300
   datasource:
     name: datasource
-    Url: jdbc:mysql://rm-uf64qwlstnkq2n35u.mysql.rds.aliyuncs.com:3306/report_content_kafka?useUnicode=true&characterEncoding=utf-8
+    Url: jdbc:mysql://rm-uf64qwlstnkq2n35u.mysql.rds.aliyuncs.com:3306/bisys?useUnicode=true&characterEncoding=utf-8
     username: datag
     password: yjkdatag
     driver-class-name: com.mysql.cj.jdbc.Driver

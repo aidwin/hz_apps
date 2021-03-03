@@ -23,5 +23,9 @@ public interface HealthReportRepo extends JpaRepository<HealthReport,Integer> ,J
     @Query(value = "select *  from health_report where create_date < 20201129 ", nativeQuery = true)
     List<HealthReport> findAll();
 
+    @Query(value = "select *  from health_report where substr(create_date,1,6) = ?1 ", nativeQuery = true)
+    List<HealthReport> findByMonth(String exec_month);
+
+
     HealthReport getHealthReportByCreateDate( String createDate );
 }
